@@ -1,19 +1,19 @@
 class AniHop < Formula
   desc "A fast terminal UI for anime: browse, stream and download through ani-cli, with AniList sync"
   homepage "https://github.com/ReynkeDeVos/ani-hop"
-  version "0.8.0"
+  version "0.8.1"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/ReynkeDeVos/ani-hop/releases/download/v0.8.0/ani-hop-aarch64-apple-darwin.tar.xz"
-    sha256 "69eadd01e7a7e175e253ad0d6615a8d6f4377a434e951dea2766283943e38490"
+    url "https://github.com/ReynkeDeVos/ani-hop/releases/download/v0.8.1/ani-hop-aarch64-apple-darwin.tar.xz"
+    sha256 "fb2c640a855814ef547a5c10a187ec3072af60f93dd0d9dae2529d2f14e657e0"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/ReynkeDeVos/ani-hop/releases/download/v0.8.0/ani-hop-aarch64-unknown-linux-musl.tar.xz"
-      sha256 "bf8aae06cebbfb1fd1f96df37cd3c699c6ac3395da344abf1928914a81ee5e32"
+      url "https://github.com/ReynkeDeVos/ani-hop/releases/download/v0.8.1/ani-hop-aarch64-unknown-linux-musl.tar.xz"
+      sha256 "2f823f83810aeb73a2d4ff5e565ba97a6b3bea2cb425e8a9730727f4399b6762"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ReynkeDeVos/ani-hop/releases/download/v0.8.0/ani-hop-x86_64-unknown-linux-musl.tar.xz"
-      sha256 "714ee4886613f92033f8d84477987dc9a08bec7d4ca1c9f64a9478719767149a"
+      url "https://github.com/ReynkeDeVos/ani-hop/releases/download/v0.8.1/ani-hop-x86_64-unknown-linux-musl.tar.xz"
+      sha256 "b4487fe3f87403a22684e273e7330c98c91e00563960aac463d9599694db4d98"
     end
   end
   license "GPL-3.0-or-later"
